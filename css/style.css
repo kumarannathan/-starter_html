@@ -1,0 +1,145 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #00ff00; /* Neon green text color */
+  }
+  
+  h1, h2, h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff00;
+  }
+  
+  h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff00;
+  }
+  
+  h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff00;
+  }
+  
+  img {
+    border: solid #00ff00 5px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    transition: transform 0.3s;
+  }
+  
+  p, span, li {
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  nav li {
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  nav a {
+    font-size: 1.5em;
+    border: solid #00ff00 1px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  nav a:focus,
+  nav a:hover {
+    text-decoration: underline;
+    border: solid #00ff00 3px;
+  }
+  
+  #skip {
+    position: absolute;
+    left: -500px;
+  }
+  
+  #skip:focus {
+    left: 500px;
+  }
+  
+  .current_page {
+    color: #00ff00;
+    text-decoration: underline;
+    background-color: #0f0f0f;
+  }
+  
+  span {
+    display: block;
+  }
+  
+  .food_images,
+  .pet_images {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .food_images img,
+  .pet_images img,
+  figure img,
+  video {
+    border: double #00ff00 5px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 30px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .food_images img:nth-child(3) {
+    grid-column: span 2;
+    width: 300px;
+    margin: auto;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    img[src$=".gif"] {
+      display: none;
+    }
+    .food_images img,
+    .pet_images img,
+    figure img,
+    video {
+      animation: none;
+    }
+  }
+  
+  @keyframes example {
+    from {
+      background-color: #0f0f0f;
+    }
+  
+    to {
+      background-color: #000;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  
